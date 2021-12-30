@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 import HeaderItem from "./HeaderItem";
 import {
     BadgeCheckIcon,
@@ -20,12 +21,16 @@ const Header = () => {
                 <HeaderItem title='SEARCH' Icon={SearchIcon} />
                 <HeaderItem title='ACCOUNT' Icon={UserIcon} />
             </div>
-            <Image 
-                className="object-contain"
-                src={"/logo.png"} 
-                width={200} 
-                height={100}
-            />
+            <Link href="/">
+                <a>
+                    <Image 
+                        className="object-contain"
+                        src={"/logo.png"} 
+                        width={200} 
+                        height={100}
+                    />
+                </a>
+            </Link>
         </header>
     )
 }
