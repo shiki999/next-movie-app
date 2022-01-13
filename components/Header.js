@@ -25,7 +25,7 @@ const Header = () => {
                 <a>
                     <Image 
                         className="object-contain"
-                        src={"/logo.png"} 
+                        src={"/logo.svg"} 
                         width={200} 
                         height={100}
                     />
